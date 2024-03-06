@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class databaseSimulator {
+public class DatabaseSimulator {
     public static Database<Table> memoryData = new Database<>();
     public static Database<String> tableNameData = new Database<>();
     public static String path = "";
