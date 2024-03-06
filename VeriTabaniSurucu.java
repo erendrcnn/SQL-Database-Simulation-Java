@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class VeriTabaniSurucu {
 	public static void main(String[] args) {
-		databaseSimulator veriTabanim = new databaseSimulator();
+		DatabaseSimulator veriTabanim = new DatabaseSimulator();
 
 		Scanner keyboard = new Scanner(System.in);
 
