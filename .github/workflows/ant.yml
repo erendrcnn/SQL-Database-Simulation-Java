@@ -26,17 +26,34 @@ jobs:
     - name: Run VeriTabaniSurucu.class
       run: |
         java VeriTabaniSurucu <<EOF
+
         CREATE TABLE FROM userLogsMini.csv
+        
         SELECT first_name FROM userLogsMini;
+        
         SELECT email FROM userLogsMini WHERE id=2000;
+
+        
         CREATE TABLE FROM userLogs.csv
+        
         SELECT first_name FROM userLogs;
+        
         SELECT id,first_name,last_name,email FROM userLogs;
+        
         SELECT email FROM userLogs WHERE id=2;
+        
         SELECT email FROM userLogs WHERE first_name=Elfie;
+
+
         CREATE TABLE FROM userLogs2.csv
+        
         SELECT first_name FROM userLogs2;
+        
         SELECT id,first_name,last_name,email FROM userLogs2;
+        
         SELECT first_name,last_name,email,gender FROM userLogs2 WHERE id=781;
+        
         SELECT email FROM userLogs2 WHERE first_name=Eamon;
+        
+        exit
         EOF
